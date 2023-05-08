@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631735A42A08346D00B56920 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 631735A32A08346D00B56920 /* FirebaseFirestoreSwift */; };
+		63273D7929FD97D7007B8E18 /* TTTGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273D7829FD97D7007B8E18 /* TTTGameApp.swift */; };
+		63273D7B29FD97D7007B8E18 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273D7A29FD97D7007B8E18 /* HomeView.swift */; };
+		63273D7D29FD97D8007B8E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63273D7C29FD97D8007B8E18 /* Assets.xcassets */; };
+		63273D8029FD97D8007B8E18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63273D7F29FD97D8007B8E18 /* Preview Assets.xcassets */; };
+		63273D8A29FD97D8007B8E18 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273D8929FD97D8007B8E18 /* GameViewModelTests.swift */; };
+		63273D9429FD97D8007B8E18 /* TTTGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273D9329FD97D8007B8E18 /* TTTGameUITests.swift */; };
+		63273D9629FD97D8007B8E18 /* TTTGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273D9529FD97D8007B8E18 /* TTTGameUITestsLaunchTests.swift */; };
+		63273DA429FD9B33007B8E18 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273DA329FD9B33007B8E18 /* GameMode.swift */; };
+		63273DA629FD9BE7007B8E18 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273DA529FD9BE7007B8E18 /* AppStrings.swift */; };
+		63273DAA29FD9DB2007B8E18 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63273DA929FD9DB2007B8E18 /* AppButtonStyle.swift */; };
+		633501862A002F6C004A07E4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633501852A002F6C004A07E4 /* Game.swift */; };
+		633501882A003294004A07E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 633501872A003294004A07E4 /* GoogleService-Info.plist */; };
+		6335018B2A003449004A07E4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6335018A2A003449004A07E4 /* FirebaseFirestore */; };
+		6335018D2A003449004A07E4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6335018C2A003449004A07E4 /* FirebaseFirestoreSwift */; };
+		6335018F2A003575004A07E4 /* FCCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335018E2A003575004A07E4 /* FCCollectionReference.swift */; };
+		633501922A00369A004A07E4 /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633501912A00369A004A07E4 /* FirebaseRepository.swift */; };
+		633501942A003DB0004A07E4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633501932A003DB0004A07E4 /* AppError.swift */; };
+		635203EC2A0251B100E8A9B0 /* GameProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635203EB2A0251B000E8A9B0 /* GameProcess.swift */; };
+		639FF00829FE701B009EDA32 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF00729FE701B009EDA32 /* GameView.swift */; };
+		639FF00C29FE7847009EDA32 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF00B29FE7847009EDA32 /* GameViewModel.swift */; };
+		639FF00E29FE7ADB009EDA32 /* BoardCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF00D29FE7ADB009EDA32 /* BoardCircleView.swift */; };
+		639FF01129FE7CB6009EDA32 /* BoardIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF01029FE7CB6009EDA32 /* BoardIndicatorView.swift */; };
+		639FF01329FE818A009EDA32 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF01229FE818A009EDA32 /* Player.swift */; };
+		639FF01529FE8526009EDA32 /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FF01429FE8526009EDA32 /* GameMove.swift */; };
+		63BD3A622A01855A007DBAC8 /* OnlineGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD3A612A01855A007DBAC8 /* OnlineGameRepository.swift */; };
+		63BD3A652A0189B6007DBAC8 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 63BD3A642A0189B6007DBAC8 /* Factory */; };
+		63BD3A672A0189E5007DBAC8 /* ServiceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD3A662A0189E5007DBAC8 /* ServiceDependencies.swift */; };
+		63CCAB3A29FEE16D002CF82F /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCAB3929FEE16D002CF82F /* AlertItem.swift */; };
+		63CCAB3C29FEE29D002CF82F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCAB3B29FEE29D002CF82F /* GameState.swift */; };
+		63FB3BCD2A08BBAC00BEB51C /* MocFirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB3BCC2A08BBAC00BEB51C /* MocFirebaseRepository.swift */; };
+		63FB3BCF2A08BD7100BEB51C /* FactorySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB3BCE2A08BD7100BEB51C /* FactorySetup.swift */; };
+		63FB3BD12A08BDF800BEB51C /* OnlineGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB3BD02A08BDF800BEB51C /* OnlineGameTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63273D8629FD97D8007B8E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63273D6D29FD97D7007B8E18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63273D7429FD97D7007B8E18;
+			remoteInfo = TTTGame;
+		};
+		63273D9029FD97D8007B8E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63273D6D29FD97D7007B8E18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63273D7429FD97D7007B8E18;
+			remoteInfo = TTTGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63273D7529FD97D7007B8E18 /* TTTGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63273D7829FD97D7007B8E18 /* TTTGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTGameApp.swift; sourceTree = "<group>"; };
+		63273D7A29FD97D7007B8E18 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		63273D7C29FD97D8007B8E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63273D7F29FD97D8007B8E18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63273D8529FD97D8007B8E18 /* TTTGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63273D8929FD97D8007B8E18 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
+		63273D8F29FD97D8007B8E18 /* TTTGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63273D9329FD97D8007B8E18 /* TTTGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTGameUITests.swift; sourceTree = "<group>"; };
+		63273D9529FD97D8007B8E18 /* TTTGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63273DA329FD9B33007B8E18 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		63273DA529FD9BE7007B8E18 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		63273DA929FD9DB2007B8E18 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		633501852A002F6C004A07E4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		633501872A003294004A07E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6335018E2A003575004A07E4 /* FCCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCollectionReference.swift; sourceTree = "<group>"; };
+		633501912A00369A004A07E4 /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
+		633501932A003DB0004A07E4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		635203EB2A0251B000E8A9B0 /* GameProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProcess.swift; sourceTree = "<group>"; };
+		639FF00729FE701B009EDA32 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		639FF00B29FE7847009EDA32 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		639FF00D29FE7ADB009EDA32 /* BoardCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCircleView.swift; sourceTree = "<group>"; };
+		639FF01029FE7CB6009EDA32 /* BoardIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardIndicatorView.swift; sourceTree = "<group>"; };
+		639FF01229FE818A009EDA32 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		639FF01429FE8526009EDA32 /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
+		63BD3A612A01855A007DBAC8 /* OnlineGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameRepository.swift; sourceTree = "<group>"; };
+		63BD3A662A0189E5007DBAC8 /* ServiceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDependencies.swift; sourceTree = "<group>"; };
+		63CCAB3929FEE16D002CF82F /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		63CCAB3B29FEE29D002CF82F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		63FB3BCC2A08BBAC00BEB51C /* MocFirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocFirebaseRepository.swift; sourceTree = "<group>"; };
+		63FB3BCE2A08BD7100BEB51C /* FactorySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySetup.swift; sourceTree = "<group>"; };
+		63FB3BD02A08BDF800BEB51C /* OnlineGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameTests.swift; sourceTree = "<group>"; };
+		63FB3BD22A08C4A300BEB51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63273D7229FD97D7007B8E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BD3A652A0189B6007DBAC8 /* Factory in Frameworks */,
+				6335018B2A003449004A07E4 /* FirebaseFirestore in Frameworks */,
+				6335018D2A003449004A07E4 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8229FD97D8007B8E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631735A42A08346D00B56920 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8C29FD97D8007B8E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63273D6C29FD97D7007B8E18 = {
+			isa = PBXGroup;
+			children = (
+				63273D7729FD97D7007B8E18 /* TTTGame */,
+				63273D8829FD97D8007B8E18 /* TTTGameTests */,
+				63273D9229FD97D8007B8E18 /* TTTGameUITests */,
+				63273D7629FD97D7007B8E18 /* Products */,
+				6374F1E62A0814AE00F16869 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63273D7629FD97D7007B8E18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63273D7529FD97D7007B8E18 /* TTTGame.app */,
+				63273D8529FD97D8007B8E18 /* TTTGameTests.xctest */,
+				63273D8F29FD97D8007B8E18 /* TTTGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63273D7729FD97D7007B8E18 /* TTTGame */ = {
+			isa = PBXGroup;
+			children = (
+				63FB3BD22A08C4A300BEB51C /* Info.plist */,
+				63273D7829FD97D7007B8E18 /* TTTGameApp.swift */,
+				63BD3A662A0189E5007DBAC8 /* ServiceDependencies.swift */,
+				639FF00A29FE7838009EDA32 /* Domains */,
+				639FF00929FE782D009EDA32 /* Presentation */,
+				63273DA829FD9DA2007B8E18 /* Styles */,
+				633501902A00357C004A07E4 /* Repositories */,
+				63273DA229FD9B1F007B8E18 /* Model */,
+				63273DA729FD9D91007B8E18 /* Utils */,
+				63273D7C29FD97D8007B8E18 /* Assets.xcassets */,
+				633501872A003294004A07E4 /* GoogleService-Info.plist */,
+				63273D7E29FD97D8007B8E18 /* Preview Content */,
+			);
+			path = TTTGame;
+			sourceTree = "<group>";
+		};
+		63273D7E29FD97D8007B8E18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63273D7F29FD97D8007B8E18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63273D8829FD97D8007B8E18 /* TTTGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				63273D8929FD97D8007B8E18 /* GameViewModelTests.swift */,
+				63FB3BD02A08BDF800BEB51C /* OnlineGameTests.swift */,
+				63FB3BCE2A08BD7100BEB51C /* FactorySetup.swift */,
+			);
+			path = TTTGameTests;
+			sourceTree = "<group>";
+		};
+		63273D9229FD97D8007B8E18 /* TTTGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63273D9329FD97D8007B8E18 /* TTTGameUITests.swift */,
+				63273D9529FD97D8007B8E18 /* TTTGameUITestsLaunchTests.swift */,
+			);
+			path = TTTGameUITests;
+			sourceTree = "<group>";
+		};
+		63273DA229FD9B1F007B8E18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63273DA329FD9B33007B8E18 /* GameMode.swift */,
+				633501852A002F6C004A07E4 /* Game.swift */,
+				63CCAB3B29FEE29D002CF82F /* GameState.swift */,
+				63CCAB3929FEE16D002CF82F /* AlertItem.swift */,
+				639FF01229FE818A009EDA32 /* Player.swift */,
+				639FF01429FE8526009EDA32 /* GameMove.swift */,
+				633501932A003DB0004A07E4 /* AppError.swift */,
+				635203EB2A0251B000E8A9B0 /* GameProcess.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63273DA729FD9D91007B8E18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				63273DA529FD9BE7007B8E18 /* AppStrings.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		63273DA829FD9DA2007B8E18 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				63273DA929FD9DB2007B8E18 /* AppButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		633501902A00357C004A07E4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6335018E2A003575004A07E4 /* FCCollectionReference.swift */,
+				633501912A00369A004A07E4 /* FirebaseRepository.swift */,
+				63BD3A612A01855A007DBAC8 /* OnlineGameRepository.swift */,
+				63FB3BCC2A08BBAC00BEB51C /* MocFirebaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6374F1E62A0814AE00F16869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639FF00929FE782D009EDA32 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				63273D7A29FD97D7007B8E18 /* HomeView.swift */,
+				639FF00729FE701B009EDA32 /* GameView.swift */,
+				639FF00F29FE7AE0009EDA32 /* ViewComponents */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		639FF00A29FE7838009EDA32 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				639FF00B29FE7847009EDA32 /* GameViewModel.swift */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		639FF00F29FE7AE0009EDA32 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				639FF00D29FE7ADB009EDA32 /* BoardCircleView.swift */,
+				639FF01029FE7CB6009EDA32 /* BoardIndicatorView.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63273D7429FD97D7007B8E18 /* TTTGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63273D9929FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGame" */;
+			buildPhases = (
+				63273D7129FD97D7007B8E18 /* Sources */,
+				63273D7229FD97D7007B8E18 /* Frameworks */,
+				63273D7329FD97D7007B8E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTTGame;
+			packageProductDependencies = (
+				6335018A2A003449004A07E4 /* FirebaseFirestore */,
+				6335018C2A003449004A07E4 /* FirebaseFirestoreSwift */,
+				63BD3A642A0189B6007DBAC8 /* Factory */,
+			);
+			productName = TTTGame;
+			productReference = 63273D7529FD97D7007B8E18 /* TTTGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63273D8429FD97D8007B8E18 /* TTTGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63273D9C29FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGameTests" */;
+			buildPhases = (
+				63273D8129FD97D8007B8E18 /* Sources */,
+				63273D8229FD97D8007B8E18 /* Frameworks */,
+				63273D8329FD97D8007B8E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63273D8729FD97D8007B8E18 /* PBXTargetDependency */,
+			);
+			name = TTTGameTests;
+			packageProductDependencies = (
+				631735A32A08346D00B56920 /* FirebaseFirestoreSwift */,
+			);
+			productName = TTTGameTests;
+			productReference = 63273D8529FD97D8007B8E18 /* TTTGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63273D8E29FD97D8007B8E18 /* TTTGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63273D9F29FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGameUITests" */;
+			buildPhases = (
+				63273D8B29FD97D8007B8E18 /* Sources */,
+				63273D8C29FD97D8007B8E18 /* Frameworks */,
+				63273D8D29FD97D8007B8E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63273D9129FD97D8007B8E18 /* PBXTargetDependency */,
+			);
+			name = TTTGameUITests;
+			productName = TTTGameUITests;
+			productReference = 63273D8F29FD97D8007B8E18 /* TTTGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63273D6D29FD97D7007B8E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					63273D7429FD97D7007B8E18 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					63273D8429FD97D8007B8E18 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 63273D7429FD97D7007B8E18;
+					};
+					63273D8E29FD97D8007B8E18 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 63273D7429FD97D7007B8E18;
+					};
+				};
+			};
+			buildConfigurationList = 63273D7029FD97D7007B8E18 /* Build configuration list for PBXProject "TTTGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63273D6C29FD97D7007B8E18;
+			packageReferences = (
+				633501892A003449004A07E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				63BD3A632A0189B6007DBAC8 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
+			productRefGroup = 63273D7629FD97D7007B8E18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63273D7429FD97D7007B8E18 /* TTTGame */,
+				63273D8429FD97D8007B8E18 /* TTTGameTests */,
+				63273D8E29FD97D8007B8E18 /* TTTGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63273D7329FD97D7007B8E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63273D8029FD97D8007B8E18 /* Preview Assets.xcassets in Resources */,
+				63273D7D29FD97D8007B8E18 /* Assets.xcassets in Resources */,
+				633501882A003294004A07E4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8329FD97D8007B8E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8D29FD97D8007B8E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63273D7129FD97D7007B8E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FB3BCD2A08BBAC00BEB51C /* MocFirebaseRepository.swift in Sources */,
+				63273D7B29FD97D7007B8E18 /* HomeView.swift in Sources */,
+				63CCAB3A29FEE16D002CF82F /* AlertItem.swift in Sources */,
+				63CCAB3C29FEE29D002CF82F /* GameState.swift in Sources */,
+				639FF01529FE8526009EDA32 /* GameMove.swift in Sources */,
+				633501942A003DB0004A07E4 /* AppError.swift in Sources */,
+				633501922A00369A004A07E4 /* FirebaseRepository.swift in Sources */,
+				63BD3A622A01855A007DBAC8 /* OnlineGameRepository.swift in Sources */,
+				63273D7929FD97D7007B8E18 /* TTTGameApp.swift in Sources */,
+				63273DA629FD9BE7007B8E18 /* AppStrings.swift in Sources */,
+				635203EC2A0251B100E8A9B0 /* GameProcess.swift in Sources */,
+				63273DA429FD9B33007B8E18 /* GameMode.swift in Sources */,
+				639FF00829FE701B009EDA32 /* GameView.swift in Sources */,
+				639FF00E29FE7ADB009EDA32 /* BoardCircleView.swift in Sources */,
+				633501862A002F6C004A07E4 /* Game.swift in Sources */,
+				63273DAA29FD9DB2007B8E18 /* AppButtonStyle.swift in Sources */,
+				639FF01129FE7CB6009EDA32 /* BoardIndicatorView.swift in Sources */,
+				6335018F2A003575004A07E4 /* FCCollectionReference.swift in Sources */,
+				639FF01329FE818A009EDA32 /* Player.swift in Sources */,
+				63BD3A672A0189E5007DBAC8 /* ServiceDependencies.swift in Sources */,
+				639FF00C29FE7847009EDA32 /* GameViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8129FD97D8007B8E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FB3BD12A08BDF800BEB51C /* OnlineGameTests.swift in Sources */,
+				63FB3BCF2A08BD7100BEB51C /* FactorySetup.swift in Sources */,
+				63273D8A29FD97D8007B8E18 /* GameViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63273D8B29FD97D8007B8E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63273D9429FD97D8007B8E18 /* TTTGameUITests.swift in Sources */,
+				63273D9629FD97D8007B8E18 /* TTTGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63273D8729FD97D8007B8E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63273D7429FD97D7007B8E18 /* TTTGame */;
+			targetProxy = 63273D8629FD97D8007B8E18 /* PBXContainerItemProxy */;
+		};
+		63273D9129FD97D8007B8E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63273D7429FD97D7007B8E18 /* TTTGame */;
+			targetProxy = 63273D9029FD97D8007B8E18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63273D9729FD97D8007B8E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63273D9829FD97D8007B8E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63273D9A29FD97D8007B8E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TTTGame/Preview Content\"";
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TTTGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63273D9B29FD97D8007B8E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TTTGame/Preview Content\"";
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TTTGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63273D9D29FD97D8007B8E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTTGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TTTGame";
+			};
+			name = Debug;
+		};
+		63273D9E29FD97D8007B8E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTTGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TTTGame";
+			};
+			name = Release;
+		};
+		63273DA029FD97D8007B8E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTTGame;
+			};
+			name = Debug;
+		};
+		63273DA129FD97D8007B8E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TTTGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTTGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63273D7029FD97D7007B8E18 /* Build configuration list for PBXProject "TTTGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63273D9729FD97D8007B8E18 /* Debug */,
+				63273D9829FD97D8007B8E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63273D9929FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63273D9A29FD97D8007B8E18 /* Debug */,
+				63273D9B29FD97D8007B8E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63273D9C29FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63273D9D29FD97D8007B8E18 /* Debug */,
+				63273D9E29FD97D8007B8E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63273D9F29FD97D8007B8E18 /* Build configuration list for PBXNativeTarget "TTTGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63273DA029FD97D8007B8E18 /* Debug */,
+				63273DA129FD97D8007B8E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		633501892A003449004A07E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		63BD3A632A0189B6007DBAC8 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		631735A32A08346D00B56920 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633501892A003449004A07E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		6335018A2A003449004A07E4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633501892A003449004A07E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6335018C2A003449004A07E4 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633501892A003449004A07E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		63BD3A642A0189B6007DBAC8 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63BD3A632A0189B6007DBAC8 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 63273D6D29FD97D7007B8E18 /* Project object */;
+}
